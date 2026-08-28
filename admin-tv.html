@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการช่องทีวี - ซุนหงคง</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#121212] text-white font-['Prompt'] antialiased">
+
+    <!-- Navbar -->
+    <nav class="p-4 bg-black/50 border-b border-gray-800 flex justify-between items-center sticky top-0 z-50 backdrop-blur-md">
+        <h1 class="text-xl font-bold text-orange-500 tracking-wide">Admin Hub - จัดการช่องทีวี</h1>
+        <a href="tv.html" class="text-sm bg-gray-800 px-4 py-2 rounded-xl hover:bg-gray-700 transition">ไปหน้าดูทีวี</a>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto p-6">
+        <!-- Form เพิ่มช่องทีวี -->
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl shadow-xl mb-8">
+            <h2 class="text-lg font-semibold mb-4 text-orange-400">เพิ่มช่องทีวีใหม่</h2>
+            <form id="addChannelForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">ชื่อช่อง (Title)</label>
+                    <input type="text" id="channelTitle" required placeholder="เช่น CH 9 HD" class="w-full bg-black border border-gray-800 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-orange-500">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">ลิงก์รูปภาพโลโก้ (Image URL)</label>
+                    <input type="url" id="channelImage" required placeholder="https://..." class="w-full bg-black border border-gray-800 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-orange-500">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">รหัสช่องหรือลิงก์สตรีม (Channel ID / Stream Link)</label>
+                    <input type="text" id="channelId" required placeholder="เช่น 150 หรือลิงก์ .m3u8" class="w-full bg-black border border-gray-800 rounded-xl px-4 py-2 text-white focus:outline-none focus:border-orange-500">
+                </div>
+                <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2.5 rounded-xl transition">บันทึกช่องทีวี</button>
+            </form>
+        </div>
+
+        <!-- รายการช่องทีวีที่มีอยู่ -->
+        <h2 class="text-lg font-semibold mb-4">รายการช่องทีวีทั้งหมดในระบบ</h2>
+        <div id="adminChannelList" class="space-y-3">
+            <!-- รายชื่อช่องจะแสดงตรงนี้ -->
+        </div>
+    </main>
+
+    <script>
+        // โหลดข้อมูลช่องเดิม (จำลองจาก LocalStorage หรืออาเรย์กลาง)
+        let tvList = JSON.parse(localStorage.getItem('customTvList')) || [
+            { id: 127, title: "CH 3 HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/3hd.png" },
+            { id: 129, title: "CH 7 HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/7hd.png" }
+        ];
+
+        const form = document.getElementById('addChannelForm');
+        const listContainer = document.getElementById('adminChannelList');
+
+        function renderAdminList() {
+            listContainer.innerHTML = tvList.map((ch, index) => `
+                <div class="bg-gray-900 border border-gray-800 p-4 rounded-xl flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <img src="${ch.image}" alt="${ch.title}" class="w-12 h-12 object-contain bg-black p-1 rounded-lg">
+                        <div>
+                            <p class="font-semibold text-white">${ch.title}</p>
+                            <p class="text-xs text-gray-400">ID: ${ch.id}</p>
+                        </div>
+                    </div>
+                    <button onclick="deleteChannel(${index})" class="bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white px-3 py-1.5 rounded-lg text-sm transition">ลบ</button>
+                </div>
+            `).join('');
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newChannel = {
+                id: document.getElementById('channelId').value,
+                title: document.getElementById('channelTitle').value,
+                image: document.getElementById('channelImage').value
+            };
+
+            tvList.push(newChannel);
+            localStorage.setItem('customTvList', JSON.stringify(tvList));
+            form.reset();
+            renderAdminList();
+            alert('เพิ่มช่องทีวีสำเร็จ!');
+        });
+
+        function deleteChannel(index) {
+            tvList.splice(index, 1);
+            localStorage.setItem('customTvList', JSON.stringify(tvList));
+            renderAdminList();
+        }
+
+        renderAdminList();
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ดูทีวีออนไลน์ - ซุนหงคง</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- HLS.js สำหรับสตรีม .m3u8 -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body class="bg-[#121212] text-white font-['Prompt'] antialiased">
+
+    <!-- Navbar -->
+    <nav class="p-4 bg-black/50 border-b border-gray-800 flex justify-between items-center sticky top-0 z-50">
+        <h1 class="text-xl font-bold text-orange-500">ซุนหงคง - TV Streaming</h1>
+        <div>
+            <a href="admin-tv.html" class="text-sm bg-orange-600 hover:bg-orange-500 px-4 py-2 rounded-xl mr-2 transition">จัดการช่อง (Admin)</a>
+            <a href="index.html" class="text-sm bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl transition">กลับหน้าแรก</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto p-6">
+        <!-- Video Player -->
+        <div class="bg-black rounded-2xl overflow-hidden border border-gray-800 aspect-video mb-8 flex items-center justify-center relative shadow-2xl">
+            <video id="tvPlayer" controls autoplay class="w-full h-full object-contain"></video>
+            <div id="playerMessage" class="absolute inset-flex items-center justify-center text-gray-500 text-sm pointer-events-none">
+                เลือกช่องด้านล่างเพื่อรับชม
+            </div>
+        </div>
+
+        <!-- Channel Grid -->
+        <h2 class="text-lg font-semibold mb-4">ช่องดิจิตอลทีวีทั้งหมด</h2>
+        <div id="channelGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <!-- โลโก้ช่องจะดึงมาแสดงตรงนี้อัตโนมัติ -->
+        </div>
+    </main>
+
+    <script>
+        // โหลดข้อมูลช่องจาก LocalStorage (ที่เพิ่มจากหน้า Admin) หรือใช้ค่าตั้งต้นถ้ายังไม่มี
+        let channels = JSON.parse(localStorage.getItem('customTvList'));
+        
+        if (!channels || channels.length === 0) {
+            channels = [
+                { title: "CH 3 HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/3hd.png", id: "https://s3.dooflixlive.com/index.m3u8" },
+                { title: "CH 7 HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/7hd.png", id: "" },
+                { title: "ONE HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/one.png", id: "" },
+                { title: "PPTV HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/pptv.png", id: "" }
+            ];
+        }
+
+        const grid = document.getElementById('channelGrid');
+        
+        channels.forEach(ch => {
+            // รองรับทั้งฟิลด์ id หรือ url ที่เก็บลิงก์สตรีม
+            const streamUrl = ch.id || ch.url || '';
+            grid.innerHTML += `
+                <div onclick="playChannel('${streamUrl}', '${ch.title}')" class="bg-gray-900 border border-gray-800 hover:border-orange-500 p-4 rounded-2xl text-center flex flex-col items-center cursor-pointer transition group">
+                    <img src="${ch.image}" alt="${ch.title}" class="w-16 h-16 object-contain mb-3 group-hover:scale-105 transition-transform" onerror="this.src='https://via.placeholder.com/150?text=TV'">
+                    <p class="font-semibold text-sm text-white truncate w-full">${ch.title}</p>
+                    <span class="text-xs text-orange-400 mt-1">รับชมสด</span>
+                </div>
+            `;
+        });
+
+        let hlsInstance = null;
+
+        function playChannel(url, title) {
+            const video = document.getElementById('tvPlayer');
+            const msg = document.getElementById('playerMessage');
+
+            if (!url || !url.startsWith('http')) {
+                alert(`ช่อง "${title}" ยังไม่ได้ใส่ลิงก์สตรีม (.m3u8) ที่ถูกต้องครับเพื่อน ไปเพิ่มลิงก์ที่หน้า Admin ได้เลย!`);
+                return;
+            }
+
+            msg.style.display = 'none';
+            console.log(`กำลังเล่นช่อง: ${title} -> ${url}`);
+
+            if (Hls.isSupported()) {
+                if (hlsInstance) {
+                    hlsInstance.destroy();
+                }
+                hlsInstance = new Hls();
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play().catch(err => console.log("Autoplay blocked:", err));
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+                video.addEventListener('loadedmetadata', () => {
+                    video.play().catch(err => console.log("Autoplay blocked:", err));
+                });
+            }
+        }
+    </script>
+</body>
+</html>

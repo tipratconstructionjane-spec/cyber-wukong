@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ซุนหงอคง - SUPREME GOD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans">
+
+    <!-- แถบนำทาง Navbar -->
+    <nav class="bg-[#121212] border-b border-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 tracking-wider">ซุนหงอคง</a>
+            
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="text-orange-500 hover:text-orange-400">หน้าแรก</a></li>
+                <!-- เชื่อมลิงก์ไปหน้าฟุตบอลสด -->
+                <li><a href="football.html" class="hover:text-orange-400">ฟุตบอลสด</a></li>
+                <!-- Dropdown: หนัง (อัปเดตลิงก์ให้กดไปหน้า movie.html) -->
+                <li><a href="tv.html" class="hover:text-orange-400">ทีวี</a></li>
+
+            <li class="relative group cursor-pointer">
+               <a href="movies.html" class="hover:text-orange-400 flex items-center gap-1 py-2">หนัง ▾</a>
+               <div class="absolute left-0 mt-0 w-48 bg-gray-900 border border-gray-700 rounded shadow-lg hidden group-hover:block z-50">
+               <a href="movies.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">หนังใหม่ชนโรง 4K</a>
+               <a href="movies.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">บ็อกซ์เซ็ต & ไตรภาค</a>
+               <a href="movies.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">ฮอลลีวูด & เอเชีย</a>
+               <a href="movies.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">การ์ตูน & แอนิเมชัน</a>
+           </div>
+         </li>
+
+                <li class="relative group cursor-pointer">
+                    <span class="hover:text-orange-400 flex items-center gap-1 py-2">ซีรีส์ ▾</span>
+                    <div class="absolute left-0 mt-0 w-48 bg-gray-900 border border-gray-700 rounded shadow-lg hidden group-hover:block z-50">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">ซีรีส์เกาหลี</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">ซีรีส์อินเตอร์</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">ซีรีส์ไทย & เอเชีย</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400">สารคดี & เกมโชว์</a>
+                    </div>
+                </li>
+                
+                <li><a href="tv.html" class="hover:text-orange-400">ทีวี</a></li>
+                
+                <li class="relative group cursor-pointer">
+                    <a href="https://tv.trueid.net/th-th" target="_blank" class="text-red-500 hover:text-red-400 flex items-center gap-1 py-2 font-bold">
+                        <span>🔥</span> VIP 18+ (TrueID)
+                    </a>
+                </li>                               
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="relative hidden lg:block">
+                <input type="text" placeholder="ค้นหา..." class="bg-gray-800 text-white text-sm rounded-full px-4 py-1.5 focus:outline-none focus:ring-1 focus:ring-orange-500 border border-gray-700">
+            </div>
+            <a href="#" class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-500 px-3 py-1.5 rounded transition">เติมเงิน</a>
+            <a href="#" class="text-sm font-medium text-gray-300 hover:text-white">โปรไฟล์</a>
+            <a href="#" class="text-sm font-medium text-red-500 hover:text-red-400">ออกจากระบบ</a>
+           <!-- Dropdown Admin Hub -->
+        <div class="relative group inline-block">
+            <button class="text-sm font-bold text-gray-900 bg-yellow-500 hover:bg-yellow-400 px-3 py-1.5 rounded flex items-center gap-1 transition">
+            <span>+</span> ADMIN HUB
+       </button>
+             <!-- เพิ่ม pt-2 เพื่อสร้างสะพานให้เมาส์เลื่อนลงมาโดนเมนูได้โดยไม่หาย -->
+        <div class="absolute right-0 pt-2 w-48 hidden group-hover:block z-50">
+        <div class="bg-gray-900 border border-gray-800 rounded-xl shadow-2xl py-2">
+            <a href="admin-football.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-orange-600 hover:text-white transition">จัดการฟุตบอล</a>
+            <a href="admin-tv.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-orange-600 hover:text-white transition">จัดการทีวีออนไลน์</a>
+            <a href="admin-html.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-orange-600 hover:text-white transition">จัดการหน้า HTML</a>
+        </div>
+    </div>
+</div>
+    </nav>
+
+    <!-- ส่วน Hero Banner -->
+    <main class="p-6 max-w-7xl mx-auto">
+        <div class="relative bg-gradient-to-r from-neutral-900 via-zinc-900 to-black border border-orange-500/30 rounded-2xl p-8 md:p-12 overflow-hidden shadow-2xl">
+            <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="max-w-2xl">
+                    <span class="text-orange-500 text-xs font-bold tracking-widest uppercase bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">
+                        พญาวานรเทพ // V.MAX REBORN
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold mt-4 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-200 to-white">
+                        ซุนหงอคง: มหาศึกสตรีมมิ่งสะท้านภพ
+                    </h1>
+                    <p class="text-gray-300 mt-4 text-sm md:text-base leading-relaxed">
+                        ตื่นตาตื่นใจกับความบันเทิงระดับเทพ พร้อมพลังแห่งพญาจอมวานร 7 ปร่างแปลงกาย กระบองทองสะท้านฟ้า ทะยานสู่จุดสูงสุด ทั้งฟุตบอลสด ทีวีออนไลน์ หนัง 4K และคอนเทนต์เอ็กซ์คลูซีฟแบบจัดเต็มในมือคุณ
+                    </p>
+                    <div class="mt-6 flex items-center gap-4">
+                        <button class="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-orange-600/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <span>▶</span> รับชมทันที
+                        </button>
+                        <button class="bg-gray-800/80 hover:bg-gray-700 text-gray-200 font-semibold px-6 py-3 rounded-xl border border-gray-700 transition">
+                            ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0">
+                    <div class="w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-to-b from-orange-500/20 via-black to-neutral-900 border-2 border-orange-500/50 flex flex-col items-center justify-center p-4 shadow-2xl relative group">
+                        <div class="absolute inset-0 rounded-full border border-orange-400/30 animate-pulse"></div>
+                        <span class="text-4xl mb-1">🐵👑🔥</span>
+                        <span class="text-orange-400 font-black tracking-widest text-sm text-center mt-1">ซุนหงอคง</span>
+                        <span class="text-xs text-gray-400 tracking-wider">SUPREME GOD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- แถบฟุตบอลแมตช์เดย์ (คลิกแล้วไปหน้าฟุตบอลได้ด้วย) -->
+        <div class="mt-8">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-bold text-orange-500 flex items-center gap-2">
+                    <span>⚽</span> ฟุตบอลแมตช์สด
+                </h2>
+                <!-- ปุ่มดูทั้งหมดโยงไปหน้าฟุตบอลสด -->
+                <a href="football.html" class="text-xs text-gray-400 hover:text-orange-400">ดูทั้งหมด ➔</a>
+            </div>
+            
+                    <!-- รายการถ่ายทอดสดฟุตบอล (Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- คู่ที่ 1: Real Madrid vs Barcelona (กำลังถ่ายทอดสด) -->
+            <div class="bg-gray-900 border border-red-900/50 rounded-2xl p-5 hover:border-red-500 transition relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl animate-pulse">
+                    LIVE NOW
+                </div>
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">⚽</span>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Real Madrid vs Barcelona</h3>
+                        <p class="text-xs text-gray-400">พรีเมียร์ลีก // สนามซานติาโก เบร์นาเบว</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-gray-800">
+                    <span class="text-xs text-red-400 font-semibold flex items-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span> กำลังถ่ายทอดสด HD
+                    </span>
+                    <a href="match-view.html?match=real-barca" class="bg-red-600 hover:bg-red-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-red-900/40">
+                        ▶ ดูสดตอนนี้
+                    </a>
+                </div>
+            </div>
+
+            <!-- คู่ที่ 2: Man United vs Liverpool -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 hover:border-orange-500/50 transition">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">⚽</span>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Man United vs Liverpool</h3>
+                        <p class="text-xs text-gray-400">พรีเมียร์ลีก // โอล์ด แทรฟฟอร์ด</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-gray-800">
+                    <span class="text-xs text-gray-400">เริ่มเวลา 03:00 น.</span>
+                    <a href="match-view.html?match=mun-liv" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-bold px-4 py-2 rounded-xl border border-gray-700 transition">
+                        🔔 แจ้งเตือน / รอชม
+                    </a>
+                </div>
+            </div>
+
+            <!-- คู่ที่ 3: AC Milan vs Inter Milan -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 hover:border-orange-500/50 transition">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">⚽</span>
+                    <div>
+                        <h3 class="text-base font-bold text-white">AC Milan vs Inter Milan</h3>
+                        <p class="text-xs text-gray-400">ยูฟ่า // แซงซีโร่ / ซานซีโร</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-gray-800">
+                    <span class="text-xs text-gray-400">เริ่มเวลา 04:00 น.</span>
+                    <a href="match-view.html?match=milan-derby" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-bold px-4 py-2 rounded-xl border border-gray-700 transition">
+                        🔔 แจ้งเตือน / รอชม
+                    </a>
+                </div>
+            </div>
+
+            <!-- คู่ที่ 4: Bayern Munich vs Dortmund -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 hover:border-orange-500/50 transition">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">⚽</span>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Bayern Munich vs Dortmund</h3>
+                        <p class="text-xs text-gray-400">บุนเดิสลีกา // อัลลิอันซ์ อารีน่า</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-gray-800">
+                    <span class="text-xs text-gray-400">เริ่มเวลา 05:00 น.</span>
+                    <a href="match-view.html?match=bayern-dortmund" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-bold px-4 py-2 rounded-xl border border-gray-700 transition">
+                        🔔 แจ้งเตือน / รอชม
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

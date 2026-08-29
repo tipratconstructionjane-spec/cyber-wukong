@@ -1,0 +1,1763 @@
+{
+  "movie": [
+    {
+      "id": 363,
+      "title": "หนังสั้นจีน",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/kpRm5vTVTmQKuC6GIBHHFteetytcV6skJ2lif85p.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 363
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 12,
+      "title": "หนังใหม่ชนโรง",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/3B31gR7ACGEeCe2aMtrcHFl7JjSvXfG5Zp8dMHE8.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 12
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 344,
+      "title": "Hot Week",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/lqiyO9C3BXypj35UwvYp4XHkiiKZNq12jaVHMNug.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 344
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 11,
+      "title": "หนังใหม่มาสเตอร์",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/DKkl6JhYBSPPYqUjt1XhO2LBfeIovS4pbl3Dcvex.png",
+      "sub_category": [
+        {
+          "id": 19,
+          "title": "NEW Hollywood Zone",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/S5kTvJMfEr9ymQCXn0hwemUnXwY5kXtKhHZFVK0I.png"
+        },
+        {
+          "id": 35,
+          "title": "NEW Asian Zone",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/r0fn3TiNAxqaa6doqJrCTjVUgEvfmkWRRqFxlfCZ.png"
+        },
+        {
+          "id": 37,
+          "title": "NEW Cartoon & Animation",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/wd0SGX7yg0pRtkD8Qm8NUpr4tknCstFOixrCMbjF.png"
+        },
+        {
+          "id": 322,
+          "title": "Drama",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hfx4nE1I3SZFJfMyLddeCZyPO5qQ15oaW7BYJfPW.png"
+        },
+        {
+          "id": 326,
+          "title": "Crime",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/1E5NtFGnrFIJfMt2dExAMcu6Zge1c7Lq4QbFrXdR.png"
+        },
+        {
+          "id": 327,
+          "title": "Horror",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/6Wz76kIisIFv4PNM7mfhcq9kWvJeDCCBs7rf7qDh.png"
+        },
+        {
+          "id": 29,
+          "title": "THAI MOVIES",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/j6hrDPQLVYv0sBHTKTEFFoEznMnUTH5p8UgFMw8M.png"
+        },
+        {
+          "id": 325,
+          "title": "Action",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/fVkLPqhzPKDZlsNeynfF43cmpaTt5TXuTGvjcX7F.png"
+        },
+        {
+          "id": 330,
+          "title": "Adventure",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/xxEXzDDwP5IKhJ6VBXddM4PnKCMhCYF69FcBD7Xl.png"
+        }
+      ],
+      "pivot": {
+        "application_id": 1,
+        "category_id": 11
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 5,
+      "title": "หนังไตรภาค",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/KBXDHcGxRnMU5hJQSdcrHYavdVYqX3ybZusrtFHX.png",
+      "sub_category": [
+        {
+          "id": 45,
+          "title": "Annabelle trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/wXjmaYufBWpy3L9Lk8CbQsShMPjAZYJ8QtEX2fmk.png"
+        },
+        {
+          "id": 49,
+          "title": "Resident Evil",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ResidentEvil.png"
+        },
+        {
+          "id": 50,
+          "title": "Man in Black",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/EiT22TWawSc0nuS4W4IBC5udskroYsjR2ToHgULB.png"
+        },
+        {
+          "id": 51,
+          "title": "Batman Box Set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TtUKw7qoZORo2EX5P2t6SO571dLU3HAsqzy76UAR.png"
+        },
+        {
+          "id": 52,
+          "title": "Lethal Weapon Complete Collection 1 - 4",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/leathalweapon.png"
+        },
+        {
+          "id": 53,
+          "title": "Kill Bill",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/killbill.png"
+        },
+        {
+          "id": 54,
+          "title": "Star War Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/starwars.png"
+        },
+        {
+          "id": 55,
+          "title": "Terminator Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Terminator.png"
+        },
+        {
+          "id": 56,
+          "title": "Spy Kid Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/SpyKid.png"
+        },
+        {
+          "id": 57,
+          "title": "Mad max box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/madmax.png"
+        },
+        {
+          "id": 58,
+          "title": "The Four Box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/the-four.png"
+        },
+        {
+          "id": 59,
+          "title": "The Hunger Game Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheHungerGame.png"
+        },
+        {
+          "id": 60,
+          "title": "ตำนานสมเด็จพระนเรศวร มหาราช Box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/naresuan.png"
+        },
+        {
+          "id": 61,
+          "title": "The Lion King Box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheLionKing.png"
+        },
+        {
+          "id": 62,
+          "title": "บุปผา ราตรี Box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/buparatee.png"
+        },
+        {
+          "id": 63,
+          "title": "UnderWorld Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/UnderWorld.png"
+        },
+        {
+          "id": 64,
+          "title": "Toy Story Box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ToyStory.png"
+        },
+        {
+          "id": 65,
+          "title": "Indiana Jones Box set",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/IndianaJones.png"
+        },
+        {
+          "id": 66,
+          "title": "Die Hard Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/DieHard.png"
+        },
+        {
+          "id": 67,
+          "title": "Fast & Furious 7 Movie Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ff.png"
+        },
+        {
+          "id": 68,
+          "title": "Shanghai Noon  + Knights",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Shanghai.png"
+        },
+        {
+          "id": 69,
+          "title": "The Final Destination",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheFinalDestination.png"
+        },
+        {
+          "id": 70,
+          "title": "Spider-man Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Spiderman.png"
+        },
+        {
+          "id": 71,
+          "title": "The Bourne collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheBourne.png"
+        },
+        {
+          "id": 72,
+          "title": "Divergent+Insurgent",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Divergent.png"
+        },
+        {
+          "id": 73,
+          "title": "Mission Impossible",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/MissionImpossible.png"
+        },
+        {
+          "id": 74,
+          "title": "Transformers 4 Movie collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/transformers.png"
+        },
+        {
+          "id": 75,
+          "title": "The Matrix Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheMatrix.png"
+        },
+        {
+          "id": 76,
+          "title": "Captain.america",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Captainamerica.png"
+        },
+        {
+          "id": 77,
+          "title": "Iron man",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Ironman.png"
+        },
+        {
+          "id": 78,
+          "title": "Thor",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Thor.png"
+        },
+        {
+          "id": 85,
+          "title": "Avenger",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/avenger.png"
+        },
+        {
+          "id": 86,
+          "title": "X-Men",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/xmen.png"
+        },
+        {
+          "id": 87,
+          "title": "007",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/007.png"
+        },
+        {
+          "id": 88,
+          "title": "The lord of the ring 1-3",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Thelordofthering.png"
+        },
+        {
+          "id": 89,
+          "title": "Godfather",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Godfather.png"
+        },
+        {
+          "id": 90,
+          "title": "The hobbit",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Thehobbit.png"
+        },
+        {
+          "id": 91,
+          "title": "Pirate of the Caribbean",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PirateoftheCaribbean.png"
+        },
+        {
+          "id": 92,
+          "title": "Triple XXX",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/xxxpng.png"
+        },
+        {
+          "id": 93,
+          "title": "Twilight",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Twilight.png"
+        },
+        {
+          "id": 94,
+          "title": "Jurassic park",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/jurassicpark.png"
+        },
+        {
+          "id": 95,
+          "title": "Harry potter",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Harrypotter.png"
+        },
+        {
+          "id": 96,
+          "title": "The Transporter trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheTransporter.png"
+        },
+        {
+          "id": 97,
+          "title": "Taken trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Taken.png"
+        },
+        {
+          "id": 98,
+          "title": "Death Note",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/DeathNote.png"
+        },
+        {
+          "id": 99,
+          "title": "The Expendables Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheExpendables.png"
+        },
+        {
+          "id": 100,
+          "title": "Mummy Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Mummy.png"
+        },
+        {
+          "id": 101,
+          "title": "Death Race trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/DeathRace.png"
+        },
+        {
+          "id": 102,
+          "title": "Rurouni Kenshin Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/RurouniKenshin.png"
+        },
+        {
+          "id": 103,
+          "title": "Robocop",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Robocop.png"
+        },
+        {
+          "id": 104,
+          "title": "Night At The Museum Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/NightAtTheMuseum.png"
+        },
+        {
+          "id": 105,
+          "title": "Hangover Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hangover.png"
+        },
+        {
+          "id": 106,
+          "title": "Johnny English",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/JohnnyEnglish.png"
+        },
+        {
+          "id": 107,
+          "title": "300 trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/300trilogy.png"
+        },
+        {
+          "id": 108,
+          "title": "Ghostbusters Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ghostbuster.png"
+        },
+        {
+          "id": 109,
+          "title": "Narnia collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/narnia.png"
+        },
+        {
+          "id": 110,
+          "title": "Predator tilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Predator.png"
+        },
+        {
+          "id": 111,
+          "title": "Ocean's trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Oceans.png"
+        },
+        {
+          "id": 112,
+          "title": "American Pie Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/AmericanPie.png"
+        },
+        {
+          "id": 113,
+          "title": "Rambo Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Rambo.png"
+        },
+        {
+          "id": 114,
+          "title": "Hellboy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hellboy.png"
+        },
+        {
+          "id": 115,
+          "title": "Ghost rider collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ghostrider.png"
+        },
+        {
+          "id": 116,
+          "title": "Police Story Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PoliceStory.png"
+        },
+        {
+          "id": 117,
+          "title": "Scary Movie Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ScaryMovie.png"
+        },
+        {
+          "id": 118,
+          "title": "Step up trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/stepup.png"
+        },
+        {
+          "id": 119,
+          "title": "Blade trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Blade.png"
+        },
+        {
+          "id": 120,
+          "title": "Crown Zero Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/CrownZero.png"
+        },
+        {
+          "id": 121,
+          "title": "The Exorcist collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheExorcist.png"
+        },
+        {
+          "id": 122,
+          "title": "A Better Tomorrow",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ABetterTomorrow.png"
+        },
+        {
+          "id": 123,
+          "title": "Ip man trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Ipman.png"
+        },
+        {
+          "id": 124,
+          "title": "Atlas Shrugged Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/AtlasShrugged.png"
+        },
+        {
+          "id": 125,
+          "title": "Chucky Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Chucky.png"
+        },
+        {
+          "id": 126,
+          "title": "A Nightmare On Elm Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ANightmareOnElm.png"
+        },
+        {
+          "id": 127,
+          "title": "Swordsman Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Swordsman.png"
+        },
+        {
+          "id": 128,
+          "title": "Battle Royal Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/BattleRoyal.png"
+        },
+        {
+          "id": 129,
+          "title": "Infernal Affairs Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/InfernalAffairs.png"
+        },
+        {
+          "id": 130,
+          "title": "Cube Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/cube.png"
+        },
+        {
+          "id": 131,
+          "title": "Alway Sunset Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/AlwaySunset.png"
+        },
+        {
+          "id": 132,
+          "title": "I Spit On Your Grave Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ISpitOnYourGrave.png"
+        },
+        {
+          "id": 133,
+          "title": "Alien Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Alien.png"
+        },
+        {
+          "id": 134,
+          "title": "Clash Of The Titan",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ClashOfTheTitan.png"
+        },
+        {
+          "id": 135,
+          "title": "Rush Hour Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/RushHour.png"
+        },
+        {
+          "id": 136,
+          "title": "The Naked Gun trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheNakedGun.png"
+        },
+        {
+          "id": 137,
+          "title": "Fantastic Four Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Fantastic4.png"
+        },
+        {
+          "id": 138,
+          "title": "Friday the 13th trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Fridaythe13th.png"
+        },
+        {
+          "id": 139,
+          "title": "Jaws trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Jaws.png"
+        },
+        {
+          "id": 140,
+          "title": "Saw trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Saw.png"
+        },
+        {
+          "id": 141,
+          "title": "Big Mama Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/BigMama.png"
+        },
+        {
+          "id": 142,
+          "title": "แหยม",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/yham.png"
+        },
+        {
+          "id": 143,
+          "title": "Superman trilogy",
+          "image": "https://s3.dooflixlive.com/assets/image/categories/Superman.png"
+        },
+        {
+          "id": 144,
+          "title": "The Purge Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ThePurge.png"
+        },
+        {
+          "id": 145,
+          "title": "Universal Soldier Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/UniversalSoldier.png"
+        },
+        {
+          "id": 146,
+          "title": "Star Trek Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/StarTrek.png"
+        },
+        {
+          "id": 147,
+          "title": "REC trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/rec.png"
+        },
+        {
+          "id": 148,
+          "title": "Rocky Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Rocky.png"
+        },
+        {
+          "id": 149,
+          "title": "Goal trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Goal.png"
+        },
+        {
+          "id": 150,
+          "title": "Godzilla trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Godzilla.png"
+        },
+        {
+          "id": 151,
+          "title": "Now You See Me Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/NowYouSeeMe.png"
+        },
+        {
+          "id": 152,
+          "title": "ไอหนุ่มหมัดเมา",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/drunkenmaster.png"
+        },
+        {
+          "id": 153,
+          "title": "Garfield Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Garfield.png"
+        },
+        {
+          "id": 154,
+          "title": "Butterfly Effect Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ButterflyEffect.png"
+        },
+        {
+          "id": 155,
+          "title": "Studio Ghibli Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/StudioGhibli.png"
+        },
+        {
+          "id": 156,
+          "title": "Alice in Wonderland trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/AliceinWonderland.png"
+        },
+        {
+          "id": 157,
+          "title": "G.i.Joe trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/gijoe.png"
+        },
+        {
+          "id": 158,
+          "title": "Anaconda trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Anaconda.png"
+        },
+        {
+          "id": 159,
+          "title": "Insidious Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Insidious.png"
+        },
+        {
+          "id": 160,
+          "title": "Back to the Future Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/BacktotheFuture.png"
+        },
+        {
+          "id": 161,
+          "title": "Speed trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Speed.png"
+        },
+        {
+          "id": 162,
+          "title": "scream trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/scream.png"
+        },
+        {
+          "id": 163,
+          "title": "21-22 jumpstreet",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/21-22jumpstreet.png"
+        },
+        {
+          "id": 164,
+          "title": "Police Academy trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PoliceAcademy.png"
+        },
+        {
+          "id": 165,
+          "title": "Doraemon the movie collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/doraemon.png"
+        },
+        {
+          "id": 166,
+          "title": "Jarhead Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Jarhead.png"
+        },
+        {
+          "id": 167,
+          "title": "Riddick Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Riddick.png"
+        },
+        {
+          "id": 168,
+          "title": "Lost Boys trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/LostBoys.png"
+        },
+        {
+          "id": 169,
+          "title": "The Man With No Name Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheManWithNoName.png"
+        },
+        {
+          "id": 170,
+          "title": "Tomb Raider Collection (2001-2003)",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/tombrider.png"
+        },
+        {
+          "id": 171,
+          "title": "Hulk Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/hulk.png"
+        },
+        {
+          "id": 172,
+          "title": "Silent Hill Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/SilentHill.png"
+        },
+        {
+          "id": 173,
+          "title": "Taxi Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Taxi.png"
+        },
+        {
+          "id": 174,
+          "title": "คนตัดคน",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/godofgam.png"
+        },
+        {
+          "id": 175,
+          "title": "Punisher Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Punisher.png"
+        },
+        {
+          "id": 176,
+          "title": "National Treasure trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/NationalTreasure.png"
+        },
+        {
+          "id": 177,
+          "title": "Pink Panther Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Pink-Panther.png"
+        },
+        {
+          "id": 178,
+          "title": "Journey 1-2 trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Journey.png"
+        },
+        {
+          "id": 179,
+          "title": "Kick Ass Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/KickAss.png"
+        },
+        {
+          "id": 180,
+          "title": "Mirror Mirror Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/MirrorMirror.png"
+        },
+        {
+          "id": 181,
+          "title": "Moment of Romance Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/MomentofRomance.png"
+        },
+        {
+          "id": 182,
+          "title": "The Haunting In Connecticut Duology",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheHauntingInConnecticut.png"
+        },
+        {
+          "id": 183,
+          "title": "Austin Powers collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/AustinPowers.png"
+        },
+        {
+          "id": 184,
+          "title": "Storm riders trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Stormriders.png"
+        },
+        {
+          "id": 185,
+          "title": "Planet of The Apes trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PlanetofTheApes.png"
+        },
+        {
+          "id": 186,
+          "title": "20th Century Boys Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/20thCenturyBoys.png"
+        },
+        {
+          "id": 190,
+          "title": "Scorpion King Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/scorpionking.png"
+        },
+        {
+          "id": 192,
+          "title": "Red Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Red.png"
+        },
+        {
+          "id": 193,
+          "title": "The Mechanic collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheMechanic.png"
+        },
+        {
+          "id": 194,
+          "title": "Sherlock Holmes trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/SherlockHolmes.png"
+        },
+        {
+          "id": 195,
+          "title": "From Dusk till Dawn trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/FromDusktillDawn.png"
+        },
+        {
+          "id": 196,
+          "title": "El Mariachi Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ElMariachi.png"
+        },
+        {
+          "id": 197,
+          "title": "Hitman Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hitman.png"
+        },
+        {
+          "id": 198,
+          "title": "Charlie's.angels collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Charliesangels.png"
+        },
+        {
+          "id": 199,
+          "title": "Conan The Movie",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/conan.png"
+        },
+        {
+          "id": 200,
+          "title": "Pokemon The Movie trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/pokemon.png"
+        },
+        {
+          "id": 201,
+          "title": "The Girl with the Dragon Tattoo",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheGirlwiththeDragonTattoo.png"
+        },
+        {
+          "id": 202,
+          "title": "Joy Ride trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/JoyRide.png"
+        },
+        {
+          "id": 203,
+          "title": "John Wick Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/JohnWick.png"
+        },
+        {
+          "id": 204,
+          "title": "Jack Reacher Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/JackReacher.png"
+        },
+        {
+          "id": 205,
+          "title": "Ninja Turtles trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/NinjaTurtles.png"
+        },
+        {
+          "id": 206,
+          "title": "Bridget Jones's Diary trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/BridgetJones.png"
+        },
+        {
+          "id": 207,
+          "title": "Tropa De Elite trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TropaDeElite.png"
+        },
+        {
+          "id": 208,
+          "title": "Once Upon a Time in China",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/OnceUponaTimeinChina.png"
+        },
+        {
+          "id": 209,
+          "title": "Stuart little",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Stuartlittle.png"
+        },
+        {
+          "id": 210,
+          "title": "Shaolin Temple Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ShaolinTemple.png"
+        },
+        {
+          "id": 211,
+          "title": "Species trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Species.png"
+        },
+        {
+          "id": 212,
+          "title": "101 Dalmatians",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/101Dalmatians.png"
+        },
+        {
+          "id": 213,
+          "title": "Blair Witch collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/BlairWitch.png"
+        },
+        {
+          "id": 214,
+          "title": "Wrong Turn trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/WrongTurn.png"
+        },
+        {
+          "id": 215,
+          "title": "The Human Centipede collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheHumanCentipede.png"
+        },
+        {
+          "id": 216,
+          "title": "Dolphin",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Dolphin.png"
+        },
+        {
+          "id": 217,
+          "title": "Babe 1-2",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/babe.png"
+        },
+        {
+          "id": 218,
+          "title": "Attack On Titan",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/AttackOntitan.png"
+        },
+        {
+          "id": 219,
+          "title": "Crank collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Crank.png"
+        },
+        {
+          "id": 220,
+          "title": "Magic mike collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Magicmike.png"
+        },
+        {
+          "id": 221,
+          "title": "Dredd Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Dredd.png"
+        },
+        {
+          "id": 222,
+          "title": "Cold War collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ColdWar.png"
+        },
+        {
+          "id": 223,
+          "title": "Hostel Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hostel.png"
+        },
+        {
+          "id": 224,
+          "title": "The raid trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Theraid.png"
+        },
+        {
+          "id": 225,
+          "title": "หอแต๋วแตก",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/hortiewtak.png"
+        },
+        {
+          "id": 226,
+          "title": "Sin City Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/SinCity.png"
+        },
+        {
+          "id": 227,
+          "title": "The Ring Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheRing.png"
+        },
+        {
+          "id": 228,
+          "title": "Tremors trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Tremors.png"
+        },
+        {
+          "id": 229,
+          "title": "Young & Dangerous collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/YoungDangerous.png"
+        },
+        {
+          "id": 230,
+          "title": "Paul Blart Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PaulBlart.png"
+        },
+        {
+          "id": 232,
+          "title": "The Conjuring",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheConjuring.png"
+        },
+        {
+          "id": 233,
+          "title": "Resident Evil animation trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ResidentEvilanimation.png"
+        },
+        {
+          "id": 234,
+          "title": "Barbie Movie Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/barbie.png"
+        },
+        {
+          "id": 235,
+          "title": "The Eye collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheEye.png"
+        },
+        {
+          "id": 236,
+          "title": "ACE VENTURA PET DETECTIVE Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/ACEVENTURA.png"
+        },
+        {
+          "id": 237,
+          "title": "Undisputed trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Undisputed.png"
+        },
+        {
+          "id": 238,
+          "title": "Jeepers Creepers trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/JeepersCreepers.png"
+        },
+        {
+          "id": 239,
+          "title": "The Mask",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/themask.png"
+        },
+        {
+          "id": 240,
+          "title": "สาระแน collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/sanane.png"
+        },
+        {
+          "id": 241,
+          "title": "Despicable Me",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/DespicableMe.png"
+        },
+        {
+          "id": 242,
+          "title": "Father of the Bride collection",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/FatheroftheBride.png"
+        },
+        {
+          "id": 243,
+          "title": "Olympus + London Has fallen",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/OlympusLondonHasfallen.png"
+        },
+        {
+          "id": 244,
+          "title": "Kingsman trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Kingsman.png"
+        },
+        {
+          "id": 245,
+          "title": "Hollow Man",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/HollowMan.png"
+        },
+        {
+          "id": 252,
+          "title": "The Marine Collection",
+          "image": "https://s3.dooflixlive.com/assets/images/caregories/TheMarine.png"
+        },
+        {
+          "id": 253,
+          "title": "Road Trip trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/RoadTrip.png"
+        },
+        {
+          "id": 254,
+          "title": "Detective Dee trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/DetectiveDee.png"
+        },
+        {
+          "id": 255,
+          "title": "Hellraiser trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hellraiser.png"
+        },
+        {
+          "id": 257,
+          "title": "Legend Of Zorro trilogy",
+          "image": "https://s3.dooflixlive.com/assets/klgshm00idws48wg80.png"
+        },
+        {
+          "id": 258,
+          "title": "The Maze Runner trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheMazeRunner.png"
+        },
+        {
+          "id": 259,
+          "title": "Pacific Rim tilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PacificRim.png"
+        },
+        {
+          "id": 260,
+          "title": "Ant-man Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Ant-man.png"
+        },
+        {
+          "id": 271,
+          "title": "Hannibal Quadrilogy 1991-2007",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Hannibal.png"
+        },
+        {
+          "id": 283,
+          "title": "เดี่ยวไมโครโฟน",
+          "image": "https://s3.dooflixlive.com/assets/4v5znk6qnfk0sw0cs4.png"
+        },
+        {
+          "id": 284,
+          "title": "Percy Jackson",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/PercyJackson.png"
+        },
+        {
+          "id": 287,
+          "title": "Fifty Shades Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/FiftyShades.png"
+        },
+        {
+          "id": 288,
+          "title": "Deadpool Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Deadpool.png"
+        },
+        {
+          "id": 289,
+          "title": "The Equalizer Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/TheEqualizer.png"
+        },
+        {
+          "id": 290,
+          "title": "Goosebumps Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Goosebumps.png"
+        },
+        {
+          "id": 291,
+          "title": "Escape Plan Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/escapeplan.png"
+        },
+        {
+          "id": 292,
+          "title": "Deep Blue Sea Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/DeepBlueSea.png"
+        },
+        {
+          "id": 293,
+          "title": "Jumanji Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/Jumanji.png"
+        },
+        {
+          "id": 294,
+          "title": "Bad Boys Trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categiries/BadBoys.png"
+        },
+        {
+          "id": 295,
+          "title": "The Mighty Ducks trilogy",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/themightyducks.png"
+        }
+      ],
+      "pivot": {
+        "application_id": 1,
+        "category_id": 5
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 7,
+      "title": "การ์ตูน",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/kKkfZRdzMcGuzg7QgQWPIFp6KKP2GHPELl6fNglC.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 7
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 355,
+      "title": "Netflix",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202308/Vc0VxXv2X1onetflix.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 355
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 4,
+      "title": "รวมคอนเสิร์ต",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/ZkByZMqGJtGNaXE9NeK1E8oWLvaFlDElks0Fs6Hk.png",
+      "sub_category": [
+        {
+          "id": 34,
+          "title": "THAI  Concert",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/NmeTOLxfqu03RbnLI3SiOQwRJx6w49TaRTsuQmOg.png"
+        },
+        {
+          "id": 31,
+          "title": "INTER Concert",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/tJ8OCjDpj5NWtSO2xNPstexa4eVuLtKY1gNAUEJU.png"
+        },
+        {
+          "id": 32,
+          "title": "KOREA  Concert",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/wHMUE2oPVHcTtYVLS7YeFNnpNNHunwzQ7DPYaT4W.png"
+        },
+        {
+          "id": 340,
+          "title": "JAPAN Concert",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/7CNwzdOGSj4PkdgX424yZgwcFQHHfdsOGdu3GKeU.png"
+        }
+      ],
+      "pivot": {
+        "application_id": 1,
+        "category_id": 4
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 361,
+      "title": "Exclusive by DooflixTV",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202306/Sr0ZE7z1LbWexclusive.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 361
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 3,
+      "title": "รวมสารคดี",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/discoveryall.png",
+      "sub_category": [
+        {
+          "id": 44,
+          "title": "Discovery",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/discovery.png"
+        }
+      ],
+      "pivot": {
+        "application_id": 1,
+        "category_id": 3
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 352,
+      "title": "Amazon Prime",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202303/waCep3wUT3vamazonprine.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 352
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 353,
+      "title": "Disney+",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202303/MkxbeSCokzLdisney.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 353
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 354,
+      "title": "HBO",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/Fscsr6uxioFhbo.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 354
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 358,
+      "title": "4K",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/IkKxq97opDB4K.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 358
+      },
+      "sort_id": 0
+    }
+  ],
+  "series": [
+    {
+      "id": 362,
+      "title": "Hot Week",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/lqiyO9C3BXypj35UwvYp4XHkiiKZNq12jaVHMNug.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 362
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 339,
+      "title": "Series on air",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/NUxTKxFH8EB38NJCGOSg5HJVspAAURPyYKqXESwV.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 339
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 309,
+      "title": "Series Korea",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/yTqm0lMIXzuUTtOyOSX9qoaTYLOEH3Ad6NIZYFMr.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 309
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 355,
+      "title": "Netflix",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202308/Vc0VxXv2X1onetflix.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 355
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 361,
+      "title": "Exclusive by DooflixTV",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202306/Sr0ZE7z1LbWexclusive.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 361
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 313,
+      "title": "TV - Gameshow",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/9NWDUugdIOz2cI3FQSxhACU5QSjTrO8was9RIzq5.png",
+      "sub_category": [
+        {
+          "id": 341,
+          "title": "Thai Gameshow",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/gameshow_thai.png"
+        },
+        {
+          "id": 342,
+          "title": "Inter Gameshow",
+          "image": "https://s3.dooflixlive.com/assets/images/categories/gameshow_inter.png"
+        }
+      ],
+      "pivot": {
+        "application_id": 1,
+        "category_id": 313
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 307,
+      "title": "Series INTER",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/fop9nHphVfb8Wy6bO2xu5W8hXP1E8HQMNTJ5GGg3.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 307
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 346,
+      "title": "Rerun Sport",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/vuXqZTq4RGf8t3HbhnsDSrlmTTry1mIBCReR5zV1.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 346
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 308,
+      "title": "Series Thai",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/YXUH3C7NRM0bj5k6085Z4OYutjV9Gk87vEPmIHH1.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 308
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 310,
+      "title": "Series Japan",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/zfCgSRtU0MJr4GtCVM3DxEoLg2DuRNhJNBu4uqSS.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 310
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 311,
+      "title": "Series Hongkong",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/gg74DoVWDfByXF1X347CPmMKk8V32QOePNWgJvxv.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 311
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 312,
+      "title": "Series Cartoon",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/BYPcEMkTw2CkHM0kgfW97H1PlWdRLzPQQX4LTCYf.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 312
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 314,
+      "title": "Documentary",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/qE2Yv27JdwK2jHNwHFXraSPTNVt55yx0DjsWzWXu.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 314
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 352,
+      "title": "Amazon Prime",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202303/waCep3wUT3vamazonprine.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 352
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 353,
+      "title": "Disney+",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202303/MkxbeSCokzLdisney.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 353
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 354,
+      "title": "HBO",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/Fscsr6uxioFhbo.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 354
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 358,
+      "title": "4K",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/IkKxq97opDB4K.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 358
+      },
+      "sort_id": 0
+    }
+  ],
+  "tv": [
+    {
+      "id": 297,
+      "title": "ช่องดิจิตอลทีวี",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/lmKUU1S5IrYPyU3RZF48rg0Lt8mgepKO5dfNmXnP.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 297
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 298,
+      "title": "ช่องกีฬา",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/mpfewxcCmFTNo2NeOjVsxSBU7T5ai41FRhoD7dYl.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 298
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 299,
+      "title": "ช่องกีฬาต่างประเทศ",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/G3Fb7T6lGHaxl7Bm8L1XquiCxi76abPPztFUWFkz.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 299
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 315,
+      "title": "ข่าวต่างประเทศ",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/yyHRczmkDMRc9Vs7txk19Foowg8VzXgOSCMCA45V.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 315
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 300,
+      "title": "ช่องบันเทิง",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/Wr19KdeGlU4HeRIQ2owWfYOoMFzAufrgYDyZ4JY0.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 300
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 301,
+      "title": "ช่องภาพยนตร์",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/JcQX0iW7QJRsLuFO9hQ73ci2gBZXprn0NeSXP8dE.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 301
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 302,
+      "title": "ช่องการ์ตูน",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/YhjvfJRDP2e8SAFFqNuOJlX0J5PKebHL7UFqWOZV.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 302
+      },
+      "sort_id": 0
+    },
+    {
+      "id": 303,
+      "title": "ช่องสารคดี",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/vbhPu2tiEcWgLiwsda2uXTPBubfgNJfBfPePCWOu.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 303
+      },
+      "sort_id": 0
+    }
+  ],
+  "genre": [
+    {
+      "id": 11,
+      "title_category": "Action",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/L4QddH7TWH2action.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 12,
+      "title_category": "Adventure",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/SVdnoP06oy2adventure.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 14,
+      "title_category": "Comedy",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/wFT0gVpGedVcomedy.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 15,
+      "title_category": "Crime",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/UBPMCpON19fcrime.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 16,
+      "title_category": "Documentary",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/tI2E41Yg7i5documentary.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 17,
+      "title_category": "Drama",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/35TwIRo9RWrdrama.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 18,
+      "title_category": "Family",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/Pti4Zw9WlNufamily.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 19,
+      "title_category": "Fantasy",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/dXyvmswN8K0fantasy.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 20,
+      "title_category": "History",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/sJ2QIyNn470history.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 21,
+      "title_category": "Horror",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/cQHOYIY02C2horror.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 22,
+      "title_category": "Music",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/aTWe6HPEU33music.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 23,
+      "title_category": "Mystery",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/VlRZg8KCyBRmystery.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 24,
+      "title_category": "Romance",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/ZDyAFswQSLTRomance.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 25,
+      "title_category": "Science Fiction",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/WOOa2ekCF1fscifi.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 26,
+      "title_category": "TV Movie",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/x3zkcdJyRF7tvmovie.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 27,
+      "title_category": "Thriller",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/Kpi6mq5cTKjthiller.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 28,
+      "title_category": "War",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/9bjinvhg2gUwar.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 29,
+      "title_category": "Western",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/PI4snxMk90fwestren.png",
+      "type_category": "movie"
+    },
+    {
+      "id": 35,
+      "title_category": "Concert",
+      "image": "https://s3.dooflixlive.com/assets/images/genre/202302/SfP9vwq78Aqmusic.png",
+      "type_category": "movie"
+    }
+  ],
+  "vip": [
+    {
+      "id": 246,
+      "title": "Censor 18+",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/xxx_censor.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 246
+      },
+      "sort_id": 1
+    },
+    {
+      "id": 247,
+      "title": "Uncen 18+",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/xxx_uncen.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 247
+      },
+      "sort_id": 2
+    },
+    {
+      "id": 248,
+      "title": "Inter 18+",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/xxx_inter.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 248
+      },
+      "sort_id": 3
+    },
+    {
+      "id": 249,
+      "title": "Thai 18+",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/xxx_thai.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 249
+      },
+      "sort_id": 4
+    },
+    {
+      "id": 250,
+      "title": "Erotic 18+",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/xxx_erotic.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 250
+      },
+      "sort_id": 5
+    },
+    {
+      "id": 251,
+      "title": "GAY 18+",
+      "image": "https://s3.dooflixlive.com/assets/images/categories/xxx_gay.png",
+      "sub_category": null,
+      "pivot": {
+        "application_id": 1,
+        "category_id": 251
+      },
+      "sort_id": 0
+    }
+  ],
+  "football_leagues": [
+    {
+      "id": 39,
+      "title": "พรีเมียร์ลีก อังกฤษ",
+      "image": "https://s3.dooflixlive.com/assets/images/football/15836afb93d215cca60afa1f2b41dd42.png"
+    },
+    {
+      "id": 61,
+      "title": "ลีกเอิง",
+      "image": "https://s3.dooflixlive.com/assets/images/football/51418798669ba80c511d7a4c54193915.png"
+    },
+    {
+      "id": 135,
+      "title": "กัลโช่ เซเรีย อา",
+      "image": "https://s3.dooflixlive.com/assets/images/football/01556d900d192327a4589b6bbf8baa42.png"
+    },
+    {
+      "id": 140,
+      "title": "ลาลีกา",
+      "image": "https://s3.dooflixlive.com/assets/images/football/a60a1e82e508ff1a3513fb1208a63b5b.png"
+    }
+  ]
+}

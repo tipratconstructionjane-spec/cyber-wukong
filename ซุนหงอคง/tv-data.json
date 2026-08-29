@@ -1,0 +1,106 @@
+{
+    "category": {
+        "id": 297,
+        "title": "ช่องดิจิตอลทีวี",
+        "image": "https://s3.dooflixlive.com/assets/images/categories/lmKUU1S5IrYPyU3RZF48rg0Lt8mgepKO5dfNmXnP.png",
+        "type": "tv"
+    },
+    "movie": {
+        "total": 39,
+        "per_page": 30,
+        "current_page": 1,
+        "last_page": 2,
+        "data": [
+            {
+                "id": 127,
+                "title": "CH 3 HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/3hd.png"
+            },
+            {
+                "id": 247,
+                "title": "CH 3 HD Backup",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/3hd.png"
+            },
+            {
+                "id": 128,
+                "title": "CH 5 HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/5hd.png"
+            },
+            {
+                "id": 129,
+                "title": "CH 7 HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/7hd.png"
+            },
+            {
+                "id": 250,
+                "title": "CH 7 HD Backup",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/SK4mc9nwGZP7hd.png"
+            },
+            {
+                "id": 131,
+                "title": "CH 8",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/8.png"
+            },
+            {
+                "id": 133,
+                "title": "MCOT HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/mcot.png"
+            },
+            {
+                "id": 136,
+                "title": "NBT",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/nbt.png"
+            },
+            {
+                "id": 141,
+                "title": "Thai Rath HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/CAJw7MUj99UhevPkGY0kbT0ER33XBhethairath.png"
+            },
+            {
+                "id": 142,
+                "title": "TNN 24",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/tnn.png"
+            },
+            {
+                "id": 138,
+                "title": "ONE HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/one.png"
+            },
+            {
+                "id": 140,
+                "title": "Thai PBS",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/thaipbs.png"
+            },
+            {
+                "id": 143,
+                "title": "Top News",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/topnews.png"
+            },
+            {
+                "id": 139,
+                "title": "PPTV HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/pptv.png"
+            },
+            {
+                "id": 130,
+                "title": "Amarin TV HD",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/amarin.png"
+            },
+            {
+                "id": 146,
+                "title": "Work Point TV",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/workpoint.png"
+            },
+            {
+                "id": 132,
+                "title": "GMM 25",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/gmm.png"
+            },
+            {
+                "id": 134,
+                "title": "MONO 29",
+                "image": "https://s3.dooflixlive.com/assets/images/tv/digital/mono.png"
+            }
+        ]
+    }
+}

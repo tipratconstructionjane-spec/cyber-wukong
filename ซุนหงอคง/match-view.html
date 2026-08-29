@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ถ่ายทอดสดการแข่งขัน - ซุนหงอคง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans">
+
+    <!-- แถบนำทาง Navbar -->
+    <nav class="bg-[#121212] border-b border-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 tracking-wider">ซุนหงอคง</a>
+            
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-orange-400">หน้าแรก</a></li>
+                <li><a href="football.html" class="text-orange-500 hover:text-orange-400">ฟุตบอลสด</a></li>
+                <li><a href="movies.html" class="hover:text-orange-400">หนัง</a></li>
+                <li><a href="#" class="hover:text-orange-400">ซีรีส์</a></li>
+                <li><a href="tv.html" class="hover:text-orange-400">ทีวี</a></li>
+                <li><a href="vip18.html" class="text-red-500 hover:text-red-400">VIP 18+</a></li>
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="football.html" class="text-sm font-medium text-gray-300 hover:text-white bg-gray-800 px-3 py-1.5 rounded-xl border border-gray-700">← กลับหน้าตารางบอล</a>
+        </div>
+    </nav>
+
+    <!-- เนื้อหาหลักหน้าถ่ายทอดสด -->
+    <main class="p-6 max-w-7xl mx-auto">
+        
+        <!-- หัวข้อคู่แข่งขัน -->
+        <div class="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+                <span class="text-xs bg-red-600 text-white font-bold px-2.5 py-1 rounded-md animate-pulse">🔴 LIVE STREAMING 4K</span>
+                <h1 class="text-xl sm:text-2xl font-extrabold text-white mt-1">Real Madrid vs Barcelona</h1>
+                <p class="text-xs text-gray-400">พรีเมียร์ลีกสเปน // คมชัดระดับ Ultra HD ไม่มีสะดุด</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg border border-gray-700">ผู้ชมออนไลน์: 48,291 คน</span>
+            </div>
+        </div>
+
+        <!-- Layout แบ่งจอภาพกับแชทรวม -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- ฝั่งซ้าย: หน้าจอเครื่องเล่นวิดีโอ (Player) -->
+            <div class="lg:col-span-2 space-y-4">
+                <div class="w-full aspect-video bg-black rounded-2xl overflow-hidden border border-gray-800 relative flex items-center justify-center shadow-2xl group">
+                    <!-- จำลองหน้าจอถ่ายทอดสด -->
+                    <iframe src="https://livescorethai.football/" class="w-full h-full absolute inset-0 border-0" allowfullscreen></iframe>
+                    <!-- ปุ่มควบคุมจำลองมุมจอ -->
+                    <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-gray-400 px-2 bg-black/60 py-2 rounded-xl backdrop-blur">
+                        <div class="flex items-center gap-3">
+                            <span class="text-white font-bold">● LIVE 1080p60</span>
+                            <span>เสียงพากย์ไทย (ทีมงานซุนหงอคง)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-gray-800 text-white px-2 py-0.5 rounded">HD</span>
+                            <span class="bg-orange-600 text-white px-2 py-0.5 rounded font-bold">VIP Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ปุ่มเปลี่ยนลิงก์สำรอง (Server Backup) -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-4">
+                    <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">เลือกช่องสัญญาณสำรอง (สลับเมื่อสะดุด)</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="bg-orange-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition">เซิร์ฟเวอร์หลัก (4K)</button>
+                        <button class="bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs font-semibold px-4 py-2 rounded-xl border border-gray-700 transition">เซิร์ฟเวอร์สำรอง 1 (FHD)</button>
+                        <button class="bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs font-semibold px-4 py-2 rounded-xl border border-gray-700 transition">เซิร์ฟเวอร์สำรอง 2 (มือถือ)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ฝั่งขวา: ช่องแชทสดและความเคลื่อนไหว -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-4 flex flex-col h-[500px] lg:h-auto">
+                <h3 class="text-sm font-bold text-white pb-3 border-b border-gray-800 flex items-center justify-between">
+                    <span>💬 แชทสดแฟนบอล</span>
+                    <span class="text-xs text-green-500 font-normal">● ออนไลน์ 1.2k</span>
+                </h3>
+
+                <!-- กล่องข้อความแชท -->
+                <div class="flex-1 overflow-y-auto space-y-3 py-3 text-xs pr-1">
+                    <div>
+                        <span class="text-orange-400 font-bold">Admin_Wukong:</span> <span class="text-gray-300">ยินดีต้อนรับสมาชิกทุกท่าน ลิงก์ลื่นไหลไม่มีสะدุดเชียร์ให้มันส์ครับ!</span>
+                    </div>
+                    <div>
+                        <span class="text-blue-400 font-bold">Kong_Football:</span> <span class="text-gray-300">ราชันชุดขาวคืนนี้ฟอร์มดุแน่นอน ลูกสองมาแน่</span>
+                    </div>
+                    <div>
+                        <span class="text-red-400 font-bold">Barca_Fan99:</span> <span class="text-gray-300">บาร์เซโลน่าสวนกลับทีเด็ดครับนัดนี้ สู้ตาย!</span>
+                    </div>
+                    <div>
+                        <span class="text-yellow-400 font-bold">VIP_Member:</span> <span class="text-gray-300">ภาพชัดมาก เสียงพากย์มันส์สุดๆ ขอบคุณแอดมินครับ</span>
+                    </div>
+                </div>
+
+                <!-- ช่องพิมพ์ข้อความส่งแชท -->
+                <div class="pt-3 border-t border-gray-800 flex gap-2">
+                    <input type="text" placeholder="พิมพ์ข้อความเชียร์..." class="flex-1 bg-black border border-gray-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-orange-500">
+                    <button class="bg-orange-600 hover:bg-orange-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition">ส่ง</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

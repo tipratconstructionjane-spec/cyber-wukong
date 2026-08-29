@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-WUKONG // ADMIN CONTROL PANEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--bg-main); color: #fff; padding: 40px;">
+
+    <div style="max-width: 900px; margin: 0 auto;">
+        <header style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 30px;">
+            <h1 class="logo" style="font-size: 24px;">CYBER-WUKONG // ADMIN PANEL</h1>
+            <a href="index.html" class="btn-play" style="text-decoration: none; padding: 8px 15px; font-size: 13px;">กลับหน้าเว็บหลัก</a>
+        </header>
+
+        <section class="section-block">
+            <h3 class="section-title">🛡️ รายชื่อผู้รออนุมัติสมาชิกใหม่ (Pending Registrations)</h3>
+            
+            <div id="pendingListContainer" style="margin-top: 20px;">
+                <!-- รายการจำลองที่จะแสดงเมื่อมีคนสมัคร -->
+                <div class="media-card" style="padding: 20px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <div>
+                        <h4 style="color: var(--accent-orange); margin-bottom: 5px;">ชื่อเล่น: สมชาย สายซิ่ง</h4>
+                        <p style="color: var(--text-muted); font-size: 14px;">เบอร์โทร: 081-234-5678 | สถานะ: รอแอดมินอนุมัติ</p>
+                    </div>
+                    <button class="btn-play" onclick="approveUser('สมชาย', '0812345678')" style="padding: 8px 15px; font-size: 13px; cursor: pointer;">กดยืนยัน & สร้างรหัส</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // เช็กว่าเคยล็อกอินเป็นแอดมินหรือยัง
+        const isAdminLoggedIn = sessionStorage.getItem('sun_wukong_admin');
+        
+        if (isAdminLoggedIn !== 'true') {
+          // ถ้ายังไม่ล็อกอิน ให้เด้งกล่องใส่รหัสผ่าน
+          let password = prompt('กรุณากรอกรหัสผ่านผู้ดูแลระบบ (Admin Hub):');
+          
+          // ตั้งรหัสผ่านตรงนี้ (เปลี่ยนคำว่า "1234" เป็นรหัสผ่านลับที่เราต้องการได้เลย)
+          if (password === '1234') {
+            sessionStorage.setItem('sun_wukong_admin', 'true');
+          } else {
+            alert('รหัสผ่านไม่ถูกต้อง! ระบบจะพากลับหน้าแรก');
+            window.location.href = 'index.html'; // ดีดกลับหน้าแรกทันที
+          }
+        }
+      </script>
+      
+</body>
+</html>

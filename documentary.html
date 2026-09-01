@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทีวีดิจิทัล - ซุนหงอคง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans">
+
+    <nav class="bg-[#121212] border-b border-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 tracking-wider">ซุนหงอคง</a>
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-orange-400">หน้าแรก</a></li>
+                <li><a href="football.html" class="hover:text-orange-400">ฟุตบอลสด</a></li>
+                <li><a href="sports.html" class="hover:text-orange-400">ช่องกีฬา</a></li>
+                <li><a href="tv.html" class="text-orange-500 font-bold">ทีวีดิจิทัล</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-white">กลับหน้าแรก</a>
+        </div>
+    </nav>
+
+    <main class="p-6 max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h1 class="text-3xl font-extrabold text-orange-500 flex items-center gap-3">
+                <span>📺</span> ทีวีดิจิทัล (Digital TV)
+            </h1>
+            <p class="text-gray-400 text-sm mt-1">รวมช่องทีวีดิจิทัลและรายการยอดฮิต คมชัด 24 ชั่วโมง</p>
+        </div>
+
+        <div id="channels-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"></div>
+    </main>
+
+    <script>
+        // ข้อมูลรายชื่อช่องและชื่อไฟล์รูป (เพื่อนสามารถเพิ่มรายชื่อช่องทีวีในหมวดนี้ได้เลย)
+        const channelList = [
+            { name: "ช่อง ANNIMAL PLAYNET HD", image: "images/documenttary/ANIMALPLAYNET.jpg" },
+            { name: "ช่อง ANNIMAL SHOW HD", image: "images/documenttary/ANYMALSHOW.jpg" },
+            { name: "ช่อง ASIA HD", image: "images/documenttary/asia.jpg" },
+            { name: "ช่อง DISCOVERY HD", image: "images/documenttary/DISCOVERY.jpg" },
+            { name: "ช่อง HISTORY HD", image: "images/documenttary/HISTORY.jpg" },
+            { name: "ช่อง THAI HD", image: "images/documenttary/THAI.jpg" },
+            { name: "ช่อง สำรวจโลก HD", image: "images/documenttary/WOLD.jpg" },
+            // เพิ่มช่องอื่นๆ ต่อได้เลยครับ
+        ];
+
+        const gridContainer = document.getElementById('channels-grid');
+
+        channelList.forEach(channel => {
+            const card = document.createElement('div');
+            card.className = "bg-gray-900/80 border border-gray-800 hover:border-orange-500 rounded-2xl p-4 flex flex-col items-center justify-between transition transform hover:-translate-y-1 shadow-lg group cursor-pointer";
+            
+            card.innerHTML = `
+                <div class="w-full h-28 flex items-center justify-center mb-4 bg-black/60 rounded-xl p-3 overflow-hidden">
+                    <img src="${channel.image}" alt="${channel.name}" class="w-full h-full object-contain">
+                </div>
+                <h3 class="text-sm font-bold text-white text-center group-hover:text-orange-400 transition">${channel.name}</h3>
+                <span class="text-[10px] bg-red-600/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded-full mt-2 font-semibold">Live 24 ชม.</span>
+            `;
+            
+            gridContainer.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>

@@ -3,99 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ดูทีวีออนไลน์ - ซุนหงคง</title>
-    <!-- Tailwind CSS -->
+    <title>ทีวีดิจิทัล - ซุนหงอคง</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- HLS.js สำหรับสตรีม .m3u8 -->
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
-<body class="bg-[#121212] text-white font-['Prompt'] antialiased">
+<body class="bg-[#121212] text-white font-sans">
 
-    <!-- Navbar -->
-    <nav class="p-4 bg-black/50 border-b border-gray-800 flex justify-between items-center sticky top-0 z-50">
-        <h1 class="text-xl font-bold text-orange-500">ซุนหงคง - TV Streaming</h1>
-        <div>
-            <a href="admin-tv.html" class="text-sm bg-orange-600 hover:bg-orange-500 px-4 py-2 rounded-xl mr-2 transition">จัดการช่อง (Admin)</a>
-            <a href="index.html" class="text-sm bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl transition">กลับหน้าแรก</a>
+    <nav class="bg-[#121212] border-b border-gray-800 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 tracking-wider">ซุนหงอคง</a>
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-orange-400">หน้าแรก</a></li>
+                <li><a href="football.html" class="hover:text-orange-400">ฟุตบอลสด</a></li>
+                <li><a href="sports.html" class="hover:text-orange-400">ช่องกีฬา</a></li>
+                <li><a href="tv.html" class="text-orange-500 font-bold">ทีวีดิจิทัล</a></li>
+                <li><a href="movies.html" class="hover:text-orange-400">ภาพยนตร์</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-white">กลับหน้าแรก</a>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto p-6">
-        <!-- Video Player -->
-        <div class="bg-black rounded-2xl overflow-hidden border border-gray-800 aspect-video mb-8 flex items-center justify-center relative shadow-2xl">
-            <video id="tvPlayer" controls autoplay class="w-full h-full object-contain"></video>
-            <div id="playerMessage" class="absolute inset-flex items-center justify-center text-gray-500 text-sm pointer-events-none">
-                เลือกช่องด้านล่างเพื่อรับชม
-            </div>
+    <main class="p-6 max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h1 class="text-3xl font-extrabold text-orange-500 flex items-center gap-3">
+                <span>📺</span> ทีวีดิจิทัล (Digital TV)
+            </h1>
+            <p class="text-gray-400 text-sm mt-1">รวมช่องทีวีดิจิทัลและรายการยอดฮิต คมชัด 24 ชั่วโมง</p>
         </div>
 
-        <!-- Channel Grid -->
-        <h2 class="text-lg font-semibold mb-4">ช่องดิจิตอลทีวีทั้งหมด</h2>
-        <div id="channelGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <!-- โลโก้ช่องจะดึงมาแสดงตรงนี้อัตโนมัติ -->
-        </div>
+        <div id="channels-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
     </main>
 
     <script>
-        // โหลดข้อมูลช่องจาก LocalStorage (ที่เพิ่มจากหน้า Admin) หรือใช้ค่าตั้งต้นถ้ายังไม่มี
-        let channels = JSON.parse(localStorage.getItem('customTvList'));
-        
-        if (!channels || channels.length === 0) {
-            channels = [
-                { title: "CH 3 HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/3hd.png", id: "https://s3.dooflixlive.com/index.m3u8" },
-                { title: "CH 7 HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/7hd.png", id: "" },
-                { title: "ONE HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/one.png", id: "" },
-                { title: "PPTV HD", image: "https://s3.dooflixlive.com/assets/images/tv/digital/pptv.png", id: "" }
-            ];
-        }
+        const channelList = [
+            { name: "ช่อง 3 HD", images: "images/nation/ch3.jpg" },
+            { name: "ช่อง 7 HD", images: "images/nation/ch7.jpg" },
+            { name: "ช่อง 2 HD", images: "images/nation/ch2.jpg" },
+            { name: "ช่อง 5 HD", images: "images/nation/ch5.jpg" },
+            { name: "ช่อง 8 HD", images: "images/nation/ch8.jpg" },
+            { name: "ช่อง 4U HD", images: "images/nation/4u.jpg" },
+            { name: "ช่อง 22 HD", images: "images/nation/22.jpg" },
+            { name: "ช่อง 25 HD", images: "images/nation/25.jpg" },
+            { name: "ช่อง 29 HD", images: "images/nation/29.jpg" },
+            { name: "ช่อง 29 PLUS HD", images: "images/nation/29+.jpg" },
+            { name: "ช่อง 31 HD", images: "images/nation/31.jpg" },
+            { name: "ช่อง 30 HD", images: "images/nation/ch30.jpg" },
+            { name: "ช่อง 34 HD", images: "images/nation/ch34.jpg" },
+            { name: "ช่อง ไทยรัฐ HD", images: "images/nation/ch32.jpg" },
+            { name: "ช่อง JKN HD", images: "images/nation/jkn.jpg" },
+            { name: "ช่อง PBS HD", images: "images/nation/pbs.jpg" },
+            { name: "ช่อง PPTV HD", images: "images/nation/pptv.jpg" },
+            { name: "ช่อง TNN HD", images: "images/nation/tnn.jpg" },
+            { name: "ช่อง TOPNEW HD", images: "images/nation/topnew.jpg" },
+            { name: "ช่อง TSPORTs", images: "images/nation/tsports.jpg" },
+            { name: "ช่อง WPK HD", images: "images/nation/wpk.jpg" }
+        ];
 
-        const grid = document.getElementById('channelGrid');
-        
-        channels.forEach(ch => {
-            // รองรับทั้งฟิลด์ id หรือ url ที่เก็บลิงก์สตรีม
-            const streamUrl = ch.id || ch.url || '';
-            grid.innerHTML += `
-                <div onclick="playChannel('${streamUrl}', '${ch.title}')" class="bg-gray-900 border border-gray-800 hover:border-orange-500 p-4 rounded-2xl text-center flex flex-col items-center cursor-pointer transition group">
-                    <img src="${ch.image}" alt="${ch.title}" class="w-16 h-16 object-contain mb-3 group-hover:scale-105 transition-transform" onerror="this.src='https://via.placeholder.com/150?text=TV'">
-                    <p class="font-semibold text-sm text-white truncate w-full">${ch.title}</p>
-                    <span class="text-xs text-orange-400 mt-1">รับชมสด</span>
+        const gridContainer = document.getElementById('channels-grid');
+
+        channelList.forEach(channel => {
+            const card = document.createElement('div');
+            card.className = "bg-gray-900/80 border border-gray-800 hover:border-orange-500 rounded-xl overflow-hidden shadow-lg transition duration-300 flex flex-col items-center p-3";
+            card.innerHTML = `
+                <div class="w-full aspect-video bg-black/40 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+                    <img src="${channel.images}" alt="${channel.name}" class="w-full h-full object-contain">
                 </div>
+                <h3 class="text-sm font-semibold text-white text-center mb-1">${channel.name}</h3>
+                <span class="text-[10px] text-orange-400 bg-orange-500/10 px-2 py-0.5 rounded-full">Live 24 ชม.</span>
             `;
+            gridContainer.appendChild(card);
         });
-
-        let hlsInstance = null;
-
-        function playChannel(url, title) {
-            const video = document.getElementById('tvPlayer');
-            const msg = document.getElementById('playerMessage');
-
-            if (!url || !url.startsWith('http')) {
-                alert(`ช่อง "${title}" ยังไม่ได้ใส่ลิงก์สตรีม (.m3u8) ที่ถูกต้องครับเพื่อน ไปเพิ่มลิงก์ที่หน้า Admin ได้เลย!`);
-                return;
-            }
-
-            msg.style.display = 'none';
-            console.log(`กำลังเล่นช่อง: ${title} -> ${url}`);
-
-            if (Hls.isSupported()) {
-                if (hlsInstance) {
-                    hlsInstance.destroy();
-                }
-                hlsInstance = new Hls();
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-                    video.play().catch(err => console.log("Autoplay blocked:", err));
-                });
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-                video.addEventListener('loadedmetadata', () => {
-                    video.play().catch(err => console.log("Autoplay blocked:", err));
-                });
-            }
-        }
     </script>
 </body>
 </html>

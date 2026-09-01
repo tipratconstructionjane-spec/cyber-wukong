@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาพยนตร์ - ซุนหงอคง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans">
+
+    <nav class="bg-[#121212] border-b border-gray-800 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="text-2xl font-bold text-orange-500 tracking-wider">ซุนหงอคง</a>
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-orange-400">หน้าแรก</a></li>
+                <li><a href="football.html" class="hover:text-orange-400">ฟุตบอลสด</a></li>
+                <li><a href="sports.html" class="hover:text-orange-400">ช่องกีฬา</a></li>
+                <li><a href="tv.html" class="hover:text-orange-400">ทีวีดิจิทัล</a></li>
+                <li><a href="movies.html" class="text-orange-500 font-bold">ภาพยนตร์</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-white">กลับหน้าแรก</a>
+        </div>
+    </nav>
+
+    <main class="p-6 max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h1 class="text-3xl font-extrabold text-orange-500 flex items-center gap-3">
+                <span>🎬</span> ภาพยนตร์ (Movies)
+            </h1>
+            <p class="text-gray-400 text-sm mt-1">รวมภาพยนตร์และช่องหนังยอดฮิต คมชัด 24 ชั่วโมง</p>
+        </div>
+
+        <div id="channels-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+    </main>
+
+    <script>
+        const movieList = [
+            { name: "ช่อง 3BB HD", images: "images/movies/3bb.jpg" },
+            { name: "ASIAN HD", images: "images/movies/asian.jpg" },
+            { name: "AXN HD", images: "images/movies/axn.jpg" },
+            { name: "CCM HD", images: "images/movies/ccm.jpg" },
+            { name: "CINEMAX HD", images: "images/movies/cinemax.jpg" },
+            { name: "DW HD", images: "images/movies/dw.jpg" },
+            { name: "GEM HD", images: "images/movies/gem.jpg" },
+            { name: "HBOFM HD", images: "images/movies/hbofm.jpg" },
+            { name: "HBO HIS HD", images: "images/movies/hbohis.jpg" },
+            { name: "HBO IG HD", images: "images/movies/hboig.jpg" }
+        ];
+
+        const gridContainer = document.getElementById('channels-grid');
+
+        movieList.forEach(movie => {
+            const card = document.createElement('div');
+            card.className = "bg-gray-900/80 border border-gray-800 hover:border-orange-500 rounded-xl overflow-hidden shadow-lg transition duration-300 flex flex-col items-center p-3";
+            card.innerHTML = `
+                <div class="w-full aspect-video bg-black/40 rounded-lg overflow-hidden flex items-center justify-center mb-3">
+                    <img src="${movie.images}" alt="${movie.name}" class="w-full h-full object-contain">
+                </div>
+                <h3 class="text-sm font-semibold text-white text-center mb-1">${movie.name}</h3>
+                <span class="text-[10px] text-orange-400 bg-orange-500/10 px-2 py-0.5 rounded-full">Live 24 ชม.</span>
+            `;
+            gridContainer.appendChild(card);
+        });
+    </script>
+</body>
+</html>

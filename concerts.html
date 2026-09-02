@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ซุนหงอคง - คอนเสิร์ต</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans min-h-screen">
+
+    <!-- Navbar / Header ตามธีมหลัก -->
+    <div class="p-6">
+        <h1 class="text-2xl font-bold flex items-center gap-2 mb-2">
+            🎤 คอนเสิร์ต (Concert)
+        </h1>
+        <p class="text-gray-400 text-sm mb-6">รวมคอนเสิร์ตฮิตและการแสดงสด คมชัดตลอดการรับชม</p>
+
+        <!-- Grid แสดงผลคอนเสิร์ตแบบหน้าทีวีดิจิทัล -->
+        <div id="concert-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- JavaScript จะเรนเดอร์การ์ดคอนเสิร์ตตรงนี้ -->
+        </div>
+    </div>
+
+    <script>
+        // ข้อมูลคอนเสิร์ต (โครงสร้างเดียวกับทีวีดิจิทัล)
+        const concertsData = [
+            {
+                title: "METALLICA",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953005.jpg",
+                link: "#"
+            },
+            {
+                title: "POTETO",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953006.jpg",
+                link: "#"
+            },
+            {
+                title: "POTETO",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953007.jpg",
+                link: "#"
+            },
+            {
+                title: "POTETO",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953008.jpg",
+                link: "#"
+            },
+            {
+                title: "Silly fools",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953009.jpg",
+                link: "#"
+            },
+            {
+                title: "Silly War II",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953010.jpg",
+                link: "#"
+            },
+            {
+                title: "Silly fools",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953011.jpg",
+                link: "#"
+            },
+            {
+                title: "CLASH",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953012.jpg",
+                link: "#"
+            },
+            {
+                title: "CLASH",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953013.jpg",
+                link: "#"
+            },
+            {
+                title: "CLASH ARMY",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953014.jpg",
+                link: "#"
+            },
+            {
+                title: "เสก โลโซ",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953016.jpg",
+                link: "#"
+            },
+            {
+                title: "เสก โลโซ",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953017.jpg",
+                link: "#"
+            },
+            {
+                title: "บอดี้สแลม",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953018.jpg",
+                link: "#"
+            },
+            {
+                title: "บอดี้สแลม",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953019.jpg",
+                link: "#"
+            },
+            {
+                title: "บอดี้สแลม",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953020.jpg",
+                link: "#"
+            },
+            {
+                title: "บอดีสแลม",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953021.jpg",
+                link: "#"
+            },
+            {
+                title: "หิน เหล็ก ไฟ",
+                category: "คอนเสิร์ต",
+                badge: "LIVE",
+                badgeColor: "bg-red-600",
+                image: "images/concerts/S__38953022.jpg",
+                link: "#"
+            },
+            {
+                title: "หิน เหล็ก ไฟ",
+                category: "การแสดงสด",
+                badge: "NEW",
+                badgeColor: "bg-orange-600",
+                image: "images/concerts/S__38953023.jpg",
+                link: "#"
+            },
+            // เพิ่มข้อมูลคอนเสิร์ตอื่นๆ ตรงนี้ต่อได้เลยเพื่อน
+        ];
+
+        // ฟังก์ชันสร้างและแสดงผลการ์ดคอนเสิร์ตอัตโนมัติ
+        const concertGrid = document.getElementById('concert-grid');
+
+        concertsData.forEach(item => {
+            const cardHTML = `
+                <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-gray-600 transition duration-300">
+                    <div class="h-36 bg-gray-800 relative overflow-hidden flex items-center justify-center">
+                        <span class="absolute top-2 right-2 ${item.badgeColor} text-xs px-2 py-0.5 rounded text-white font-bold">${item.badge}</span>
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="font-semibold text-sm truncate">${item.title}</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">${item.category}</p>
+                        <a href="${item.link}" class="mt-2 block text-center bg-orange-600 hover:bg-orange-500 text-white text-xs py-1.5 rounded transition duration-200 font-medium">รับชมทันที</a>
+                    </div>
+                </div>
+            `;
+            concertGrid.innerHTML += cardHTML;
+        });
+    </script>
+
+</body>
+</html>

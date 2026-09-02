@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ซุนหงอคง - เล่นวิดีโอ</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Back Button -->
+    <div class="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
+        <a href="vip18.html" class="text-sm bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded transition font-medium">
+            ← กลับหน้า VIP 18+
+        </a>
+        <h1 id="video-title" class="font-bold text-base text-center truncate px-4">กำลังโหลด...</h1>
+        <span class="text-xs text-red-500 font-bold border border-red-500/30 px-2 py-1 rounded">SECURE STREAM</span>
+    </div>
+
+    <!-- Video Player Container -->
+    <div class="flex-1 flex items-center justify-center p-4">
+        <div class="w-full max-w-4xl bg-black rounded-lg overflow-hidden shadow-2xl border border-gray-800">
+            <video id="main-video" controls autoplay class="w-full max-h-[75vh] object-contain">
+                <!-- ใส่พาธไฟล์วิดีโอจริงตรง src หรือควบคุมผ่าน JS ได้เลย -->
+                <source src="videos/sample-video.mp4" type="video/mp4">
+                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer Info -->
+    <div class="p-4 text-center text-xs text-gray-500 bg-gray-900 border-t border-gray-800">
+        ระบบสตรีมมิ่งภายในแพลตฟอร์ม ซุนหงอคง 2026
+    </div>
+
+</body>
+</html>

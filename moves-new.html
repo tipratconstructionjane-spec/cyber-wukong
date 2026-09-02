@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ซุนหงอคง - หนังใหม่ชนโรง 4K</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-white font-sans min-h-screen">
+
+    <nav class="bg-[#121212] border-b border-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+            <a href="index.html" class="text-orange-500 font-bold text-xl">ซุนหงอคง</a>
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-orange-400">หน้าแรก</a></li>
+                <li><a href="football.html" class="hover:text-orange-400">ฟุตบอลสด</a></li>
+                <li class="relative group cursor-pointer">
+                    <span class="hover:text-orange-400 flex items-center gap-1 py-2">ทีวี ▾</span>
+                    <div class="absolute left-0 mt-0 w-48 bg-gray-900 border border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                        <a href="tv.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">📺 ดิจิทัลทีวี</a>
+                        <a href="sports.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">⚽ ช่องกีฬา</a>
+                        <a href="kids.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">🧸 ช่องการ์ตูน</a>
+                        <a href="news.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">📰 ช่องข่าว</a>
+                        <a href="documentary.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">🐅 ช่องสารคดี</a>
+                        <a href="master-movies.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">🎬 ช่องบันเทิง</a>
+                    </div>
+                </li>
+                <li class="relative group cursor-pointer">
+                    <span class="text-orange-400 flex items-center gap-1 py-2 font-semibold">หนัง ▾</span>
+                    <div class="absolute left-0 mt-0 w-52 bg-gray-900 border border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                        <a href="movies-new.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">🔥 หนังใหม่ชนโรง 4K</a>
+                        <a href="movies-trilogy.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">📦 บ็อกซ์เซ็ต & ไตรภาค</a>
+                        <a href="master-movies.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">🎬 ฮอลลีวูด & เอเชีย</a>
+                        <a href="movies-cartoon.html" class="block px-4 py-2 hover:bg-gray-800 hover:text-orange-400 text-sm">🧸 การ์ตูน & แอนิเมชัน</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a href="#" class="bg-red-600 px-4 py-2 rounded-md text-sm font-semibold hover:bg-red-700 transition">VIP 18+ (TrueID)</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <h1 class="text-3xl font-bold mb-6 border-l-4 border-orange-500 pl-4">🔥 หนังใหม่ชนโรง 4K</h1>
+        
+        <div id="movie-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            </div>
+    </main>
+
+    <script>
+        // ข้อมูลรายการหนัง (เพิ่มหรือลดตรงนี้ได้เลย สะดวกสุดๆ)
+        const moviesData = [
+            {
+                title: "BURY THE DEVIL",
+                genre: "ภาพยนต์",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/bury.jpg",
+                link: "#"
+            },
+            {
+                title: "INSIDIOUS",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/insidous.jpg",
+                link: "#"
+            },
+            {
+                title: "just play dead",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/just play dead.jpg",
+                link: "#"
+            },
+            {
+                title: "motercity",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/motercity.jpg",
+                link: "#"
+            },
+            {
+                title: "pinocchio",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/pinocchio.jpg",
+                link: "#"
+            },
+            {
+                title: "party",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/party.jpg",
+                link: "#"
+            },
+            {
+                title: "return",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/return.jpg",
+                link: "#"
+            },
+            {
+                title: "project",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/project.jpg",
+                link: "#"
+            },
+            {
+                title: "หมัดเทวดาท้าเดิมพัน",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944775.jpg",
+                link: "#"
+            },
+            {
+                title: "TUNER",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944784.jpg",
+                link: "#"
+            },
+            {
+                title: "THE ISOLATE THIEF",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944785.jpg",
+                link: "#"
+            },
+            {
+                title: "คำสารภาพของหมอผี",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944786.jpg",
+                link: "#"
+            },
+            {
+                title: "MUTINY",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944787.jpg",
+                link: "#"
+            },
+            {
+                title: "Maa Inti Bangaran",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944788.jpg",
+                link: "#"
+            },
+            {
+                title: "SISTER",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944789.jpg",
+                link: "#"
+            },
+            {
+                title: "THE END",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944790.jpg",
+                link: "#"
+            },
+            {
+                title: "HEARTMAN",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944791.jpg",
+                link: "#"
+            },
+            {
+                title: "SOULM8TE",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944792.jpg",
+                link: "#"
+            },
+            {
+                title: "Cold War 1994",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944797.jpg",
+                link: "#"
+            },
+            {
+                title: "GHOST TRAIN",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944794.jpg",
+                link: "#"
+            },
+            {
+                title: "Young Washington",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944795.jpg",
+                link: "#"
+            },
+            {
+                title: "Last Days",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944796.jpg",
+                link: "#"
+            },
+            {
+                title: "Spider-Man",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944798.jpg",
+                link: "#"
+            },
+            {
+                title: "Ice Cream Man",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944799.jpg",
+                link: "#"
+            },
+            {
+                title: "The Last",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944800.jpg",
+                link: "#"
+            },
+            {
+                title: "COLONY",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/S__38944801.jpg",
+                link: "#"
+            },
+            {
+                title: "Mongoose",
+                genre: "แอคชั่น / แฟนตาซี",
+                badge: "4K ULTRA",
+                badgeColor: "bg-red-600",
+                image:"images/movies-new/the mongoose.jpg",
+                link: "#"
+            },
+            
+        ];
+            
+        
+
+        // ฟังก์ชันสร้างและแสดงผลการ์ดหนัง
+        const movieGrid = document.getElementById('movie-grid');
+
+        moviesData.forEach(movie => {
+            const cardHTML = `
+                <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 hover:border-orange-500 transition group">
+                    <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
+                    <span class="absolute top-2 right-2 ${movie.badgeColor} text-xs px-2 py-1 rounded text-white font-bold">${movie.badge}</span>
+                    <img src="${movie.image}" alt="${movie.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg truncate">${movie.title}</h3>
+                        <p class="text-sm text-gray-400 mt-1">${movie.genre}</p>
+                        <a href="${movie.link}" class="mt-3 block text-center bg-orange-600 hover:bg-orange-700 text-white text-sm py-2 rounded transition">รับชมทันที</a>
+                    </div>
+                </div>
+            `;
+            movieGrid.innerHTML += cardHTML;
+        });
+    </script>
+
+</body>
+</html>
